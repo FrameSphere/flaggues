@@ -194,6 +194,11 @@ function overlayGuess(targetImageData, guessImageData) {
     const guessData = guessImageData.data;
     const currentData = gameState.currentCanvas.data;
 
+    // WICHTIG: Erhöhte Toleranz für ähnliche Farben!
+    // Jede Flagge hat einzigartige Farbnuancen, daher vergleichen wir 
+    // ob Farben "ähnlich genug" sind, nicht ob sie exakt gleich sind
+    const COLOR_TOLERANCE = 35; // Toleranz pro RGB-Kanal (0-255)
+
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
             const idx = (y * width + x) * 4;
@@ -206,13 +211,17 @@ function overlayGuess(targetImageData, guessImageData) {
             const gG = guessData[idx + 1];
             const gB = guessData[idx + 2];
 
-            // Pixel exakt vergleichen (mit kleiner Toleranz für JPEG-Artefakte)
-            const tolerance = 5;
-            if (Math.abs(tR - gR) <= tolerance && 
-                Math.abs(tG - gG) <= tolerance && 
-                Math.abs(tB - gB) <= tolerance) {
+            // Berechne Farb-Unterschied für jeden Kanal
+            const diffR = Math.abs(tR - gR);
+            const diffG = Math.abs(tG - gG);
+            const diffB = Math.abs(tB - gB);
+
+            // Wenn alle Kanäle innerhalb der Toleranz liegen -> Farben sind "ähnlich genug"
+            if (diffR <= COLOR_TOLERANCE && 
+                diffG <= COLOR_TOLERANCE && 
+                diffB <= COLOR_TOLERANCE) {
                 
-                // Pixel übernehmen
+                // Pixel übernehmen (nehme Original-Zielfarbe)
                 currentData[idx] = tR;
                 currentData[idx + 1] = tG;
                 currentData[idx + 2] = tB;
