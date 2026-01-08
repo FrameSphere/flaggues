@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlagGuess - Erraten Sie die Flagge!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎯 FlagGuess</h1>
+                    <p>Erraten Sie die Flagge in maximal 5 Versuchen!</p>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Theme wechseln">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <div class="canvas-wrapper">
+                <div class="canvas-container">
+                    <canvas id="targetCanvas" width="600" height="400"></canvas>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="attempts-info">
+                    <div class="attempt-badge">
+                        <span class="attempt-label">Versuche</span>
+                        <span id="attemptCounter" class="attempt-count">0/5</span>
+                    </div>
+                    <button id="newGameBtn" class="btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                        </svg>
+                        Neues Spiel
+                    </button>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="countryInput" 
+                            placeholder="Land eingeben..." 
+                            list="countries"
+                            autocomplete="off"
+                        >
+                        <datalist id="countries"></datalist>
+                    </div>
+                    <button id="guessBtn" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                        Raten
+                    </button>
+                </div>
+            </div>
+
+            <div class="previous-guesses">
+                <h3>Bisherige Versuche</h3>
+                <div id="guessList" class="guess-grid"></div>
+            </div>
+        </div>
+
+        <div id="resultModal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <h2 id="resultTitle"></h2>
+                <div class="result-canvas-wrapper">
+                    <canvas id="resultCanvas" width="600" height="400"></canvas>
+                </div>
+                <p id="resultText"></p>
+                <button id="playAgainBtn" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                    Nochmal spielen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="countries.js"></script>
+    <script src="theme.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

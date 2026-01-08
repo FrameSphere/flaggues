@@ -1,0 +1,25 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Optional: Node modules (falls später benötigt)
+node_modules/
+
+# Environment variables (falls später benötigt)
+.env
+.env.local
+
+# Build outputs (falls später Build-Prozess hinzugefügt wird)
+dist/
+build/
