@@ -1,0 +1,29 @@
+# ===============================
+# Cloudflare Pages Redirects
+# Flag Guess
+# ===============================
+
+# ---- Static files (serve directly)
+/assets/*             /assets/:splat       200
+/style.css            /style.css           200
+/countries.js         /countries.js        200
+/game.js              /game.js             200
+/theme.js             /theme.js            200
+/translations.js      /translations.js     200
+
+# ---- Ads.txt (important for AdSense)
+/ads.txt      /ads.txt           200
+
+# ---- Robots & Sitemap
+/robots.txt   /robots.txt        200
+/sitemap.xml  /sitemap.xml       200
+
+# ---- Legal Pages
+/impressum.html     /impressum.html      200
+/datenschutz.html   /datenschutz.html    200
+
+# ---- Google Verification
+/google7ef57c38ed213579.html   /google7ef57c38ed213579.html   200
+
+# ---- SPA Fallback (ALWAYS LAST RULE!)
+/*            /index.html        200

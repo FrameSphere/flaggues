@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlagGuess - Tägliches Flaggen Quiz Spiel</title>
+    <meta name="description" content="Errate die Flagge in maximal 8 Versuchen! Kostenloses tägliches Flaggen-Quiz für Geografie-Fans. Teste dein Wissen über Länderflaggen weltweit.">
+    <meta name="keywords" content="Flaggen Quiz, Flaggen erraten, Länderflaggen, Geografie Spiel, FlagGuess, Flaggen Spiel, Quiz">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FlagGuess - Tägliches Flaggen Quiz">
+    <meta property="og:description" content="Errate die Flagge in maximal 8 Versuchen! Teste dein Wissen über Länderflaggen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flaggues.pages.dev/">
+    <meta property="og:site_name" content="FlagGuess">
+    <meta property="og:image" content="https://flaggues.pages.dev/assets/favicon.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FlagGuess - Flaggen Quiz Spiel">
+    <meta name="twitter:description" content="Errate die Flagge in maximal 8 Versuchen!">
+    <meta name="twitter:image" content="https://flaggues.pages.dev/assets/favicon.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flaggues.pages.dev/">
+    
+    <!-- hreflang Tags für Mehrsprachigkeit -->
+    <link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/">
+    <link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/">
+    <link rel="alternate" hreflang="x-default" href="https://flaggues.pages.dev/">
+    
+    <!-- Preconnect für schnelleres Laden -->
+    <link rel="preconnect" href="https://flagcdn.com">
+    <link rel="dns-prefetch" href="https://flagcdn.com">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FlagGuess",
+      "alternateName": "Flaggen Quiz Spiel",
+      "url": "https://flaggues.pages.dev/",
+      "description": "Errate die Flagge in maximal 8 Versuchen! Kostenloses tägliches Flaggen-Quiz für Geografie-Fans.",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "image": "https://flaggues.pages.dev/assets/favicon.svg",
+      "inLanguage": "de-DE",
+      "potentialAction": {
+        "@type": "PlayAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://flaggues.pages.dev/"
+        }
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005"
+     crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎯 FlagGuess</h1>
+                    <p id="subtitle">Erraten Sie die Flagge!</p>
+                </div>
+                <div class="header-controls">
+                    <!-- Timer Display -->
+                    <div class="timer-display">
+                        ⏱️ <span id="timer">0:00</span>
+                    </div>
+                    <!-- Difficulty Selector -->
+                    <select id="difficultySelect" class="difficulty-select" aria-label="Schwierigkeitsgrad wählen">
+                        <option value="easy">🟢 Einfach</option>
+                        <option value="medium" selected>🟡 Mittel</option>
+                        <option value="hard">🔴 Schwer</option>
+                    </select>
+                    <!-- Language Selector -->
+                    <select id="languageSelect" class="language-select" aria-label="Sprache wählen">
+                        <option value="de">🇩🇪 DE</option>
+                        <option value="en">🇬🇧 EN</option>
+                    </select>
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="theme-toggle" aria-label="Theme wechseln">
+                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-board">
+            <!-- Flag Canvas -->
+            <div class="canvas-wrapper">
+                <div class="canvas-container">
+                    <canvas id="flagCanvas" width="600" height="400"></canvas>
+                </div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls">
+                <div class="attempts-info">
+                    <div class="attempt-badge">
+                        <span class="attempt-label" id="attemptLabel">Versuche</span>
+                        <span id="attemptCounter" class="attempt-count">0/5</span>
+                    </div>
+                    <button id="newGameBtn" class="btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                        </svg>
+                        <span id="newGameText">Neues Spiel</span>
+                    </button>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="countryInput" 
+                            placeholder="Land eingeben..." 
+                            list="countries"
+                            autocomplete="off"
+                        >
+                        <datalist id="countries"></datalist>
+                    </div>
+                    <button id="guessBtn" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                        <span id="guessText">Raten</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Previous Guesses -->
+            <div class="previous-guesses">
+                <h2 id="previousGuessesTitle" class="section-title">Bisherige Versuche</h2>
+                <div id="guessList" class="guess-grid"></div>
+            </div>
+        </main>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <button class="how-to-play-toggle" aria-expanded="false">
+                <h2 class="section-title" id="howToPlayTitle">So funktioniert's</h2>
+                <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div class="instructions collapsed">
+                <div class="instruction-item">
+                    <span class="instruction-number">1</span>
+                    <p id="instruction1">Sieh dir die angezeigte Flagge genau an</p>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">2</span>
+                    <p id="instruction2">Gib den Namen des Landes ein</p>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">3</span>
+                    <p id="instruction3">Du hast je nach Schwierigkeitsgrad 3-8 Versuche</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Content Section -->
+        <section class="seo-content">
+            <div class="content-block">
+                <h2 class="content-title" id="seoTitle">Das ultimative Flaggen Quiz Spiel – Teste dein Wissen!</h2>
+                <div class="content-text">
+                    <p id="seoParagraph1">
+                        <strong>FlagGuess</strong> ist das perfekte <strong>Flaggen Quiz</strong> für alle Geografie-Fans und Quiz-Liebhaber. 
+                        In diesem kostenlosen <strong>Länderflaggen Quiz</strong> kannst du dein Wissen über mehr als 190 Flaggen aus der ganzen Welt testen. 
+                        Ob du ein Anfänger bist oder bereits ein Flaggen-Experte – mit drei verschiedenen Schwierigkeitsgraden bietet das Spiel 
+                        für jeden die passende Herausforderung.
+                    </p>
+                    <p id="seoParagraph2">
+                        Das Spielprinzip ist einfach aber fesselnd: Dir wird eine zufällige <strong>Länderflagge</strong> angezeigt und du musst 
+                        das richtige Land erraten. Je nach Schwierigkeitsgrad hast du zwischen 3 und 8 Versuche. Das Spiel bietet dir eine 
+                        interaktive Möglichkeit, die <strong>Flaggen der Welt</strong> zu lernen und dein geografisches Wissen zu erweitern. 
+                        Von europäischen Flaggen über afrikanische bis hin zu exotischen Inselstaaten – entdecke die Vielfalt aller Kontinente!
+                    </p>
+                    <p id="seoParagraph3">
+                        Nutze die umfangreiche <a href="library.html" class="content-link"><strong>Flag Library</strong></a>, um alle verfügbaren 
+                        Flaggen zu durchstöbern und mehr über die einzelnen Länder zu erfahren. Perfekt für Schüler, Lehrer oder alle, 
+                        die ihre <strong>Geografie-Kenntnisse</strong> verbessern möchten. Das <strong>tägliche Flaggen Quiz</strong> ist komplett 
+                        kostenlos und funktioniert auf allen Geräten – ob Desktop, Tablet oder Smartphone.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    © 2026 FlagGuess · powered by <a href="https://frame-sphere.vercel.app" class="footer-link">FrameSphere</a>
+                </div>
+                <div class="footer-links">
+                    <a href="library.html" class="footer-link" id="libraryLink">🌍 Flag Library</a>
+                    <span class="footer-separator">·</span>
+                    <a href="#" class="footer-link" id="aboutLink">About FlagGuess</a>
+                    <span class="footer-separator">·</span>
+                    <a href="impressum.html" class="footer-link">Impressum</a>
+                    <span class="footer-separator">·</span>
+                    <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Schließen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2 id="aboutTitle" class="modal-title">Über FlagGuess</h2>
+            <div class="about-content">
+                <p id="aboutDescription">
+                    <strong>FlagGuess</strong> ist ein kostenloses <strong>Flaggen Quiz Spiel</strong>, 
+                    bei dem du dein Wissen über <strong>Länderflaggen</strong> aus der ganzen Welt testen kannst. 
+                    Das <strong>Geografie-Spiel</strong> fordert dich heraus, Flaggen zu erraten.
+                </p>
+                <h3 id="aboutFeaturesTitle">Features:</h3>
+                <ul class="about-list">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="resultModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <h2 id="resultTitle"></h2>
+            <div class="result-canvas-wrapper">
+                <canvas id="resultCanvas" width="600" height="400"></canvas>
+            </div>
+            <p id="resultText"></p>
+            <div id="shareButtons" class="share-buttons"></div>
+            <button id="playAgainBtn" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                </svg>
+                <span id="playAgainText">Nochmal spielen</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Previous Country Popup -->
+    <div id="previousCountryPopup" class="previous-country-popup hidden"></div>
+
+    <!-- Scripts -->
+    <script src="countries.js"></script>
+    <script src="translations.js"></script>
+    <script src="theme.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
