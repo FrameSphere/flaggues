@@ -975,6 +975,65 @@ header {
     margin-bottom: 0;
 }
 
+/* Read More Button & Fade Effect */
+.content-text {
+    position: relative;
+}
+
+.seo-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, var(--card-bg));
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.seo-hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.seo-content.expanded .seo-hidden-content {
+    max-height: 2000px;
+}
+
+.seo-content.expanded .seo-fade {
+    opacity: 0;
+}
+
+.read-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 24px auto 0;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 86, 214, 0.4);
+}
+
+.read-more-icon {
+    transition: transform 0.3s ease;
+}
+
+.seo-content.expanded .read-more-icon {
+    transform: rotate(180deg);
+}
+
 .content-text strong {
     color: var(--text-primary);
     font-weight: 600;
