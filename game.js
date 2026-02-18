@@ -521,4 +521,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // About Link im Footer
+    const aboutLinkFooter = document.getElementById('aboutLinkFooter');
+    const aboutModal = document.getElementById('aboutModal');
+    
+    if (aboutLinkFooter && aboutModal) {
+        aboutLinkFooter.addEventListener('click', (e) => {
+            e.preventDefault();
+            showModal(aboutModal);
+        });
+    }
 });
