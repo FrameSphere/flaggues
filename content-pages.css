@@ -2,6 +2,49 @@
    CONTENT PAGES STYLES (flags-of-, hardest-, similar-, easy-)
    ======================================== */
 
+/* ========================================
+   COMPATIBILITY: Support for old class names
+   ======================================== */
+
+/* Make old .continent-page work like .content-page */
+.continent-page .hero-section,
+.continent-page .page-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.continent-page .hero-section h1,
+.continent-page .page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.continent-page .subtitle,
+.continent-page .hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
+}
+
+.continent-page .content-section {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+    .continent-page .content-section {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Page Hero Section */
 .content-page .page-hero {
     text-align: center;
