@@ -1225,6 +1225,10 @@ header {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
     .logo h1 {
         font-size: 1.75rem;
     }
@@ -1244,12 +1248,45 @@ header {
         justify-content: center;
     }
 
-    .footer-copyright,
+    /* Footer Mobile Fix */
+    .footer-content {
+        padding: 16px;
+    }
+
+    .footer-copyright {
+        font-size: 0.75rem;
+        word-break: break-word;
+    }
+
     .footer-links {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .footer-link {
+        font-size: 0.75rem;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    .footer-links a:not(:last-child)::after {
+        content: "\00a0\00b7";
+        margin-left: 8px;
+        color: var(--text-tertiary);
     }
 
     .category-cards {
         grid-template-columns: 1fr;
+    }
+
+    .content-title {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1.125rem;
     }
 }
