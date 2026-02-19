@@ -1,11 +1,13 @@
 #!/bin/bash
-# Flag Country Pages Generator
-# Generates individual SEO pages for each country
+# Flag Country Pages Generator (ENGLISH - FIXED VERSION)
+# Generates individual SEO pages for each country in /en/countries/
+
+echo "🇬🇧 Generating English country pages..."
 
 # Create countries directory
-mkdir -p enCountries
+mkdir -p en/countries
 
-# Sample country data (you can expand this with all 195 countries)
+# Country data array (same data as German version)
 declare -A COUNTRIES=(
     ["germany"]="Deutschland|Germany|Europe|Schwarz-Rot-Gold|Black-Red-Gold|Die deutsche Flagge zeigt drei horizontale Streifen in Schwarz, Rot und Gold.|The German flag shows three horizontal stripes in black, red, and gold."
     ["france"]="Frankreich|France|Europe|Blau-Weiß-Rot|Blue-White-Red|Die französische Trikolore zeigt drei vertikale Streifen.|The French tricolor shows three vertical stripes."
@@ -219,53 +221,54 @@ generate_country_page() {
     de_desc="$7"
     en_desc="$8"
 
-    # Beispiel: Ausgabe in Datei
-    filename="countries/${slug}.html"
-    mkdir -p countries
-    cat > "$filename" <<EOF
+    # ✅ FIXED: Korrekte Output-Location
+    filename="en/countries/${slug}.html"
+    
+    cat > "$filename" <<'EOF_TEMPLATE'
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${de_name} Flagge Quiz – ${de_name}flagge erraten | FlagGuess</title>
-    <meta name="description" content="Lerne die ${de_name} Flagge kennen. ${de_desc} Teste dein Wissen im kostenlosen Flaggen Quiz.">
-    
+    <title>%%EN_NAME%% Flag Quiz – Guess the %%EN_NAME%% Flag | FlagGuess</title>
+    <meta name="description" content="Learn about the %%EN_NAME%% flag. %%EN_DESC%% Test your knowledge in our free flag quiz.">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="${de_name} Flagge | FlagGuess">
-    <meta property="og:description" content="${de_desc}">
+    <meta property="og:title" content="%%EN_NAME%% Flag | FlagGuess">
+    <meta property="og:description" content="%%EN_DESC%%">
     <meta property="og:image" content="https://flaggues.pages.dev/assets/og-image.svg">
-    <meta property="og:url" content="https://flaggues.pages.dev/countries/${slug}-flag.html">
-    
+    <meta property="og:url" content="https://flaggues.pages.dev/en/countries/%%SLUG%%.html">
+
     <!-- Canonical -->
-    <link rel="canonical" href="https://flaggues.pages.dev/countries/${slug}-flag.html">
-    
+    <link rel="canonical" href="https://flaggues.pages.dev/en/countries/%%SLUG%%.html">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../library.css">
-    <link rel="stylesheet" href="../content-pages.css">
-    
+
+    <!-- ✅ FIXED: Korrekte CSS Pfade -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/content-pages.css">
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "${de_name} Flagge",
-      "description": "${de_desc}",
+      "name": "%%EN_NAME%% Flag",
+      "description": "%%EN_DESC%%",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [{
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://flaggues.pages.dev/"
+          "item": "https://flaggues.pages.dev/en/"
         }, {
           "@type": "ListItem",
           "position": 2,
-          "name": "${de_name} Flagge",
-          "item": "https://flaggues.pages.dev/countries/${slug}-flag.html"
+          "name": "%%EN_NAME%% Flag",
+          "item": "https://flaggues.pages.dev/en/countries/%%SLUG%%.html"
         }]
       }
     }
@@ -278,91 +281,91 @@ generate_country_page() {
                 <a href="../index.html" class="nav-logo">🎯 FlagGuess</a>
                 <div class="nav-links">
                     <a href="../index.html">Quiz</a>
-                    <a href="../library.html">Bibliothek</a>
+                    <a href="../../library.html">Library</a>
                 </div>
             </nav>
         </header>
 
         <main class="content-page">
             <div class="page-hero">
-                <h1>🚩 ${de_name} Flagge</h1>
-                <p class="hero-subtitle">Lerne alles über die ${de_name}flagge – Farben, Bedeutung und Geschichte</p>
+                <h1>🚩 %%EN_NAME%% Flag</h1>
+                <p class="hero-subtitle">Learn everything about the %%EN_NAME%% flag – colors, meaning, and history</p>
             </div>
 
             <div class="content-wrapper">
                 <section class="seo-content">
-                    <h2>Die ${de_name} Flagge – Übersicht</h2>
-                    <p>${de_desc} Die <strong>${de_name} Flagge</strong> gehört zu ${continent} und ist ein wichtiges Nationalsymbol des Landes.</p>
-                    
-                    <h3>Farben der ${de_name} Flagge</h3>
-                    <p>Die Hauptfarben der <strong>${de_name}flagge</strong> sind: <strong>${de_colors}</strong></p>
-                    
-                    <h3>${de_name} Flagge im Quiz</h3>
-                    <p>Kannst du die ${de_name} Flagge im Quiz erkennen? Teste dein Wissen über die <strong>${de_name}flagge</strong> in unserem kostenlosen <strong>Flaggen Quiz</strong>. Die ${de_name} Flagge ist eine der bekanntesten Flaggen aus ${continent}.</p>
-                    
-                    <h3>Warum die ${de_name} Flagge lernen?</h3>
+                    <h2>The %%EN_NAME%% Flag – Overview</h2>
+                    <p>%%EN_DESC%% The <strong>%%EN_NAME%% flag</strong> belongs to %%CONTINENT%% and is an important national symbol of the country.</p>
+
+                    <h3>Colors of the %%EN_NAME%% Flag</h3>
+                    <p>The main colors of the <strong>%%EN_NAME%% flag</strong> are: <strong>%%EN_COLORS%%</strong></p>
+
+                    <h3>%%EN_NAME%% Flag in the Quiz</h3>
+                    <p>Can you recognize the %%EN_NAME%% flag in the quiz? Test your knowledge of the <strong>%%EN_NAME%% flag</strong> in our free <strong>Flag Quiz</strong>. The %%EN_NAME%% flag is one of the most famous flags from %%CONTINENT%%.</p>
+
+                    <h3>Why Learn the %%EN_NAME%% Flag?</h3>
                     <ul>
-                        <li><strong>Geografie-Wissen:</strong> Lerne ${de_name} und seine Position in ${continent} kennen</li>
-                        <li><strong>Quiz-Vorbereitung:</strong> Die ${de_name} Flagge ist ein Klassiker in jedem Flaggen Quiz</li>
-                        <li><strong>Allgemeinbildung:</strong> Wichtiges Grundwissen über ${de_name}</li>
-                        <li><strong>Reisevorbereitung:</strong> Perfekt wenn du nach ${de_name} reisen möchtest</li>
+                        <li><strong>Geography Knowledge:</strong> Learn about %%EN_NAME%% and its location in %%CONTINENT%%</li>
+                        <li><strong>Quiz Preparation:</strong> The %%EN_NAME%% flag is a classic in every flag quiz</li>
+                        <li><strong>General Knowledge:</strong> Essential facts about %%EN_NAME%%</li>
+                        <li><strong>Travel Prep:</strong> Perfect if you plan to visit %%EN_NAME%%</li>
                     </ul>
 
-                    <h3>Interessante Fakten zur ${de_name} Flagge</h3>
-                    <p>Die <strong>${de_name} Flagge</strong> ist nicht nur ein Symbol für ${de_name}, sondern auch ein Zeugnis der Geschichte und Kultur des Landes. Jede Farbe und jedes Symbol auf der ${de_name}flagge hat eine besondere Bedeutung.</p>
+                    <h3>Interesting Facts about the %%EN_NAME%% Flag</h3>
+                    <p>The <strong>%%EN_NAME%% flag</strong> is not only a symbol of %%EN_NAME%%, but also a testament to the country's history and culture. Each color and symbol on the %%EN_NAME%% flag has a special meaning.</p>
 
                     <div class="cta-box">
-                        <h3>Bereit die ${de_name} Flagge im Quiz zu erraten?</h3>
-                        <p>Teste dein Wissen über die ${de_name} Flagge und über 190 weitere Länderflaggen!</p>
-                        <a href="../index.html" class="cta-button">🚩 Quiz starten</a>
+                        <h3>Ready to guess the %%EN_NAME%% flag in the quiz?</h3>
+                        <p>Test your knowledge of the %%EN_NAME%% flag and over 190 other country flags!</p>
+                        <a href="../index.html" class="cta-button">🚩 Start Quiz</a>
                     </div>
 
-                    <h3>Häufig gestellte Fragen zur ${de_name} Flagge</h3>
+                    <h3>Frequently Asked Questions about the %%EN_NAME%% Flag</h3>
                     <div class="faq">
                         <div class="faq-item">
-                            <h4>Wie sieht die ${de_name} Flagge aus?</h4>
-                            <p>${de_desc}</p>
+                            <h4>What does the %%EN_NAME%% flag look like?</h4>
+                            <p>%%EN_DESC%%</p>
                         </div>
                         <div class="faq-item">
-                            <h4>Welche Farben hat die ${de_name} Flagge?</h4>
-                            <p>Die ${de_name} Flagge hat die Farben: ${de_colors}.</p>
+                            <h4>What colors does the %%EN_NAME%% flag have?</h4>
+                            <p>The %%EN_NAME%% flag has the colors: %%EN_COLORS%%.</p>
                         </div>
                         <div class="faq-item">
-                            <h4>Wo liegt ${de_name}?</h4>
-                            <p>${de_name} liegt in ${continent}.</p>
+                            <h4>Where is %%EN_NAME%% located?</h4>
+                            <p>%%EN_NAME%% is located in %%CONTINENT%%.</p>
                         </div>
                         <div class="faq-item">
-                            <h4>Wie schwer ist die ${de_name} Flagge im Quiz?</h4>
-                            <p>Die ${de_name} Flagge ist eine bekannte Flagge und eignet sich gut für Anfänger und Fortgeschrittene im Flaggen Quiz.</p>
+                            <h4>How difficult is the %%EN_NAME%% flag in the quiz?</h4>
+                            <p>The %%EN_NAME%% flag is a well-known flag and suitable for beginners and advanced players in the flag quiz.</p>
                         </div>
                     </div>
 
-                    <h3>Mehr über ${de_name} lernen</h3>
-                    <p>Die <strong>${de_name} Flagge</strong> ist nur der Anfang. In unserem Flaggen Quiz kannst du auch die Geografie, Hauptstadt und weitere Fakten über ${de_name} lernen. Die ${de_name}flagge ist ein wichtiger Teil der nationalen Identität und Geschichte des Landes.</p>
+                    <h3>Learn More About %%EN_NAME%%</h3>
+                    <p>The <strong>%%EN_NAME%% flag</strong> is just the beginning. In our flag quiz, you can also learn geography, capital city, and other facts about %%EN_NAME%%. The %%EN_NAME%% flag is an important part of the country's national identity and history.</p>
                 </section>
 
                 <aside class="related-pages">
-                    <h3>Mehr Flaggen</h3>
+                    <h3>More Flags</h3>
                     <div class="continent-grid">
-                        <a href="../library.html" class="continent-card">
+                        <a href="../../library.html" class="continent-card">
                             <span class="continent-icon">📚</span>
-                            <h4>Alle Flaggen</h4>
-                            <p>195+ Länder</p>
+                            <h4>All Flags</h4>
+                            <p>195+ countries</p>
                         </a>
                         <a href="../easy-flags.html" class="continent-card">
                             <span class="continent-icon">🟢</span>
-                            <h4>Einfache Flaggen</h4>
-                            <p>Top 20 zum Start</p>
+                            <h4>Easy Flags</h4>
+                            <p>Top 20 to start</p>
                         </a>
                         <a href="../hardest-flags.html" class="continent-card">
                             <span class="continent-icon">🔥</span>
-                            <h4>Schwerste Flaggen</h4>
-                            <p>Ultimative Challenge</p>
+                            <h4>Hardest Flags</h4>
+                            <p>Ultimate challenge</p>
                         </a>
                         <a href="../similar-flags.html" class="continent-card">
                             <span class="continent-icon">👯</span>
-                            <h4>Ähnliche Flaggen</h4>
-                            <p>Verwechslungsgefahr</p>
+                            <h4>Similar Flags</h4>
+                            <p>Confusing ones</p>
                         </a>
                     </div>
                 </aside>
@@ -371,44 +374,54 @@ generate_country_page() {
 
         <footer class="footer">
             <div class="footer-content">
-                <p>&copy; 2026 FlagGuess. Lerne die ${de_name} Flagge und 195+ weitere Länderflaggen!</p>
+                <p>&copy; 2026 FlagGuess. Learn the %%EN_NAME%% flag and 195+ more country flags!</p>
                 <div class="footer-links">
-                    <a href="../index.html">Quiz spielen</a>
-                    <a href="../library.html">Flaggen Bibliothek</a>
-                    <a href="../hardest-flags.html">Schwerste Flaggen</a>
-                    <a href="../similar-flags.html">Ähnliche Flaggen</a>
-                    <a href="../impressum.html">Impressum</a>
-                    <a href="../datenschutz.html">Datenschutz</a>
+                    <a href="../index.html">Play Quiz</a>
+                    <a href="../../library.html">Flag Library</a>
+                    <a href="../hardest-flags.html">Hardest Flags</a>
+                    <a href="../similar-flags.html">Similar Flags</a>
+                    <a href="../../impressum.html">Imprint</a>
+                    <a href="../../datenschutz.html">Privacy Policy</a>
                 </div>
             </div>
         </footer>
     </div>
 </body>
 </html>
-EOF
+EOF_TEMPLATE
+
+    # Replace placeholders
+    sed -i.bak \
+        -e "s|%%SLUG%%|${slug}|g" \
+        -e "s|%%DE_NAME%%|${de_name}|g" \
+        -e "s|%%EN_NAME%%|${en_name}|g" \
+        -e "s|%%CONTINENT%%|${continent}|g" \
+        -e "s|%%DE_COLORS%%|${de_colors}|g" \
+        -e "s|%%EN_COLORS%%|${en_colors}|g" \
+        -e "s|%%DE_DESC%%|${de_desc}|g" \
+        -e "s|%%EN_DESC%%|${en_desc}|g" \
+        "$filename"
+    
+    rm -f "${filename}.bak"
+    
+    echo "  ✅ Created: $filename"
 }
 
-# Länder durchlaufen
+# Generate pages for all countries
+count=0
 for slug in "${!COUNTRIES[@]}"; do
-    # Ursprünglichen Wert in Variable
     country_data="${COUNTRIES[$slug]}"
-
-    # Sonderzeichen absichern, Zeilenumbrüche durch Leerzeichen ersetzen
     country_data=$(printf '%s' "$country_data" | tr '\n' ' ')
-
-    # Splitten nach | in Variablen
     IFS='|' read -r de_name en_name continent de_colors en_colors de_desc en_desc <<< "$country_data"
-
-    # Generieren
     generate_country_page "$slug" "$de_name" "$en_name" "$continent" "$de_colors" "$en_colors" "$de_desc" "$en_desc"
+    ((count++))
 done
 
 echo ""
-echo "✅ Country pages generated successfully!"
-echo "📍 Location: countries/"
+echo "✅ Generated $count English country pages successfully!"
+echo "📍 Location: en/countries/"
 echo ""
-echo "💡 Next steps:"
-echo "1. Add more countries to the COUNTRIES array (all 195)"
-echo "2. Run this script to generate all pages"
-echo "3. Update sitemap.xml with all generated pages"
-echo "4. Push to GitHub and deploy to Cloudflare Pages"
+echo "🎉 All done! You can now:"
+echo "   1. Test the pages locally"
+echo "   2. Update sitemap.xml"
+echo "   3. Push to GitHub and deploy"
