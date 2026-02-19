@@ -2,6 +2,12 @@
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
 
+/de/*
+  Content-Language: de
+
+/en/*
+  Content-Language: en
+
 # Security Headers
 /*
   X-Frame-Options: DENY

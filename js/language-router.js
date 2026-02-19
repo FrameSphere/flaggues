@@ -1,48 +1,32 @@
 // ============================================
-// INTEGRIERTES LANGUAGE ROUTING SYSTEM
-// Arbeitet zusammen mit translations.js
+// SIMPLIFIED LANGUAGE ROUTING SYSTEM
+// Works with /de/index.html and /en/index.html
 // ============================================
 
 class LanguageRouter {
     constructor() {
         this.currentLang = this.detectLanguage();
-        
-        // Content-Seiten die in /de/ und /en/ liegen
-        this.contentPages = [
-            'easy-flags.html',
-            'hardest-flags.html',
-            'similar-flags.html',
-            'flags-of-europe.html',
-            'flags-of-asia.html',
-            'flags-of-africa.html',
-            'flags-of-americas.html',
-            'flags-of-oceania.html'
-        ];
-        
-        // Auto-Init
         this.init();
     }
 
-    // Erkennt aktuelle Sprache (identisch mit translations.js)
+    // Detect current language from URL
     detectLanguage() {
-        // 1. Prüfe URL-Pfad
         const path = window.location.pathname;
+        
+        // Check if URL contains /de/ or /en/
         if (path.includes('/de/')) return 'de';
         if (path.includes('/en/')) return 'en';
 
-        // 2. Prüfe localStorage (gleicher Key wie translations.js!)
+        // Check localStorage
         const saved = localStorage.getItem('flagguess-language');
         if (saved === 'de' || saved === 'en') return saved;
 
-        // 3. Prüfe Browser-Sprache
+        // Check browser language
         const browserLang = navigator.language.substring(0, 2);
-        if (browserLang === 'de') return 'de';
-
-        // 4. Default: Deutsch
-        return 'de';
+        return browserLang === 'de' ? 'de' : 'en';
     }
 
-    // Speichert Sprach-Präferenz (synchronisiert mit translations.js)
+    // Save language preference
     setLanguage(lang) {
         if (lang !== 'de' && lang !== 'en') {
             console.error('[LanguageRouter] Invalid language:', lang);
@@ -51,120 +35,76 @@ class LanguageRouter {
         
         this.currentLang = lang;
         localStorage.setItem('flagguess-language', lang);
-        
         console.log('[LanguageRouter] Language set to:', lang);
     }
 
-    // Gibt aktuelle Sprache zurück
+    // Get current language
     getLanguage() {
         return this.currentLang;
     }
 
-    // Initialisierung
+    // Initialize
     init() {
-        const path = window.location.pathname;
-        const isContentPage = this.contentPages.some(page => path.includes(page));
-        const isRootPage = path === '/' || path.includes('index.html') || path.includes('library.html');
-        
-        if (isRootPage) {
-            // Root-Seite: Update Links dynamisch
-            document.addEventListener('DOMContentLoaded', () => {
-                this.updateContentLinks();
-                this.setupLanguageSelectListener();
-            });
-        } else if (isContentPage) {
-            // Content-Seite: Nur Language Select Listener
-            document.addEventListener('DOMContentLoaded', () => {
-                this.setupLanguageSelectListener();
-            });
-        }
-    }
-
-    // Updated alle Links zu Content-Seiten auf Root-Seiten
-    updateContentLinks() {
-        const links = document.querySelectorAll('a[href]');
-        
-        links.forEach(link => {
-            const href = link.getAttribute('href');
-            
-            // Prüfe ob Link zu einer Content-Seite geht
-            const isContentPageLink = this.contentPages.some(page => {
-                // Match sowohl "de/page.html" als auch "page.html"
-                return href.includes(page) || href.endsWith(page);
-            });
-            
-            if (isContentPageLink) {
-                // Extrahiere Dateiname
-                const fileName = this.contentPages.find(page => href.includes(page));
-                
-                // Setze Pfad basierend auf aktueller Sprache
-                const newHref = `${this.currentLang}/${fileName}`;
-                link.setAttribute('href', newHref);
-                
-                console.log('[LanguageRouter] Updated link:', href, '→', newHref);
-            }
+        document.addEventListener('DOMContentLoaded', () => {
+            this.setupLanguageSelect();
         });
     }
 
-    // Setup Language Select Event Listener
-    setupLanguageSelectListener() {
+    // Setup language select dropdown
+    setupLanguageSelect() {
         const langSelect = document.getElementById('languageSelect');
         if (!langSelect) return;
 
-        // Setze aktuellen Wert
+        // Set current value
         langSelect.value = this.currentLang;
 
-        // Event Listener (zusätzlich zu translations.js)
+        // Add event listener
         langSelect.addEventListener('change', (e) => {
-            const newLang = e.target.value;
-            this.handleLanguageChange(newLang);
+            this.handleLanguageChange(e.target.value);
         });
         
         console.log('[LanguageRouter] Language select initialized');
     }
 
-    // Sprachwechsel Handler
+    // Handle language change
     handleLanguageChange(newLang) {
         if (newLang === this.currentLang) return;
 
-        const path = window.location.pathname;
-        const currentFile = path.split('/').pop();
-        
-        // Speichere neue Sprache
+        // Save new language
         this.setLanguage(newLang);
         
-        // Prüfe ob wir auf Content-Seite sind
-        if (this.contentPages.includes(currentFile)) {
-            // Content-Seite: Zur anderen Sprach-Version navigieren
-            const newPath = `/${newLang}/${currentFile}`;
-            console.log('[LanguageRouter] Navigating to:', newPath);
-            window.location.href = newPath;
-        } else {
-            // Root-Seite: Links updaten (translations.js kümmert sich um Texte)
-            this.updateContentLinks();
-            console.log('[LanguageRouter] Updated content links for language:', newLang);
-        }
-    }
-
-    // Hilfsfunktion: Ist aktuelle Seite eine Content-Seite?
-    isOnContentPage() {
+        // Get current path
         const path = window.location.pathname;
-        return this.contentPages.some(page => path.includes(page));
+        
+        // Determine new path
+        let newPath;
+        
+        if (path.includes('/de/')) {
+            // We're on a DE page → switch to EN
+            newPath = path.replace('/de/', '/en/');
+        } else if (path.includes('/en/')) {
+            // We're on an EN page → switch to DE
+            newPath = path.replace('/en/', '/de/');
+        } else {
+            // We're on root or other page → go to language root
+            newPath = `/${newLang}/`;
+        }
+        
+        console.log('[LanguageRouter] Navigating from', path, 'to', newPath);
+        window.location.href = newPath;
     }
 
-    // Hilfsfunktion: Gibt Pfad zur Content-Seite in aktueller Sprache
-    getContentPagePath(fileName) {
-        if (!this.contentPages.includes(fileName)) {
-            console.warn('[LanguageRouter] Not a content page:', fileName);
-            return fileName;
-        }
-        return `/${this.currentLang}/${fileName}`;
+    // Check if currently on a localized page
+    isOnLocalizedPage() {
+        const path = window.location.pathname;
+        return path.includes('/de/') || path.includes('/en/');
     }
 }
 
-// Globale Instanz erstellen
+// Create global instance
 window.languageRouter = new LanguageRouter();
 
-// Debug Info
-console.log('[LanguageRouter] Initialized with language:', window.languageRouter.getLanguage());
+// Debug info
+console.log('[LanguageRouter] Initialized');
+console.log('[LanguageRouter] Current language:', window.languageRouter.getLanguage());
 console.log('[LanguageRouter] Current path:', window.location.pathname);

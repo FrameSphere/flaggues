@@ -22,6 +22,14 @@
 /impressum.html     /impressum.html      200
 /datenschutz.html   /datenschutz.html    200
 
+# Redirect root to DE (default language)
+/  /de/  302
+/index.html  /de/  302
+
+# Ensure clean URLs
+/de  /de/  301
+/en  /en/  301
+
 # ---- Google Verification
 /google7ef57c38ed213579.html   /google7ef57c38ed213579.html   200
 

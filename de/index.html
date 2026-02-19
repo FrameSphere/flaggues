@@ -7,9 +7,14 @@
     <meta name="description" content="Errate die Flagge in maximal 8 Versuchen! Kostenloses tägliches Flaggen-Quiz für Geografie-Fans. Teste dein Wissen über Länderflaggen weltweit.">
     <meta name="keywords" content="Flaggen Quiz, Flaggen erraten, Länderflaggen, Geografie Spiel, FlagGuess, Flaggen Spiel, Quiz">
     
+    <link rel="canonical" href="https://flaggues.pages.dev/de/">
+    <link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/">
+    <link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/">
+    <link rel="alternate" hreflang="x-default" href="https://flaggues.pages.dev/de/">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="FlagGuess - Tägliches Flaggen Quiz">
@@ -28,12 +33,12 @@
     <meta name="twitter:image" content="https://flaggues.pages.dev/assets/favicon.svg">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://flaggues.pages.dev/">
+    <link rel="canonical" href="https://flaggues.pages.dev/de/">
     
     <!-- hreflang Tags für Mehrsprachigkeit -->
-    <link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/">
+    <link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/">
     <link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/">
-    <link rel="alternate" hreflang="x-default" href="https://flaggues.pages.dev/">
+    <link rel="alternate" hreflang="x-default" href="https://flaggues.pages.dev/de/">
     
     <!-- Preconnect für schnelleres Laden -->
     <link rel="preconnect" href="https://flagcdn.com">
@@ -67,24 +72,11 @@
     }
     </script>
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005"
      crossorigin="anonymous"></script>
 </head>
 <body data-theme="dark">
-    <script>
-        // Auto-redirect to language version
-        (function() {
-            const path = window.location.pathname;
-            // Only redirect from exact root
-            if (path === '/' || path === '/index.html') {
-                const savedLang = localStorage.getItem('flagguess-language');
-                const browserLang = navigator.language.substring(0, 2);
-                const targetLang = savedLang || (browserLang === 'de' ? 'de' : 'en');
-                window.location.href = '/' + targetLang + '/';
-            }
-        })();
-    </script>
     <div class="container">
         <header>
             <div class="header-content">
@@ -213,17 +205,17 @@
                 <div class="category-group">
                     <h3 class="category-group-title">🎯 Nach Schwierigkeit</h3>
                     <div class="category-cards">
-                        <a href="de/easy-flags.html" class="category-card easy">
+                        <a href="easy-flags.html" class="category-card easy">
                             <span class="category-icon">🟢</span>
                             <h4>Einfache Flaggen</h4>
                             <p>Top 20 für Einsteiger</p>
                         </a>
-                        <a href="de/hardest-flags.html" class="category-card hard">
+                        <a href="hardest-flags.html" class="category-card hard">
                             <span class="category-icon">🔥</span>
                             <h4>Schwerste Flaggen</h4>
                             <p>Ultimative Challenge</p>
                         </a>
-                        <a href="de/similar-flags.html" class="category-card similar">
+                        <a href="similar-flags.html" class="category-card similar">
                             <span class="category-icon">👯</span>
                             <h4>Ähnliche Flaggen</h4>
                             <p>Verwechslungsgefahr</p>
@@ -235,32 +227,32 @@
                 <div class="category-group">
                     <h3 class="category-group-title">🌍 Nach Kontinent</h3>
                     <div class="category-cards">
-                        <a href="de/flags-of-europe.html" class="category-card continent">
+                        <a href="flags-of-europe.html" class="category-card continent">
                             <span class="category-icon">🇪🇺</span>
                             <h4>Europäische Flaggen</h4>
                             <p>44 Länder</p>
                         </a>
-                        <a href="de/flags-of-asia.html" class="category-card continent">
+                        <a href="flags-of-asia.html" class="category-card continent">
                             <span class="category-icon">🌏</span>
                             <h4>Asiatische Flaggen</h4>
                             <p>48 Länder</p>
                         </a>
-                        <a href="de/flags-of-africa.html" class="category-card continent">
+                        <a href="flags-of-africa.html" class="category-card continent">
                             <span class="category-icon">🌍</span>
                             <h4>Afrikanische Flaggen</h4>
                             <p>54 Länder</p>
                         </a>
-                        <a href="de/flags-of-americas.html" class="category-card continent">
+                        <a href="flags-of-americas.html" class="category-card continent">
                             <span class="category-icon">🌎</span>
                             <h4>Amerikanische Flaggen</h4>
                             <p>35 Länder</p>
                         </a>
-                        <a href="de/flags-of-oceania.html" class="category-card continent">
+                        <a href="flags-of-oceania.html" class="category-card continent">
                             <span class="category-icon">🌊</span>
                             <h4>Ozeanische Flaggen</h4>
                             <p>14 Länder</p>
                         </a>
-                        <a href="library.html" class="category-card continent">
+                        <a href="../library.html" class="category-card continent">
                             <span class="category-icon">📚</span>
                             <h4>Alle Flaggen</h4>
                             <p>195+ Länder</p>
@@ -288,7 +280,7 @@
                         Von europäischen Flaggen über afrikanische bis hin zu exotischen Inselstaaten – entdecke die Vielfalt aller Kontinente!
                     </p>
                     <p id="seoParagraph3">
-                        Nutze die umfangreiche <a href="library.html" class="content-link"><strong>Flag Library</strong></a>, um alle verfügbaren 
+                        Nutze die umfangreiche <a href="../library.html" class="content-link"><strong>Flag Library</strong></a>, um alle verfügbaren 
                         Flaggen zu durchstöbern und mehr über die einzelnen Länder zu erfahren. Perfekt für Schüler, Lehrer oder alle, 
                         die ihre <strong>Geografie-Kenntnisse</strong> verbessern möchten. Das <strong>tägliche Flaggen Quiz</strong> ist komplett 
                         kostenlos und funktioniert auf allen Geräten – ob Desktop, Tablet oder Smartphone.
@@ -331,13 +323,13 @@
                     © 2026 FlagGuess · powered by <a href="https://frame-sphere.vercel.app" class="footer-link">FrameSphere</a>
                 </div>
                 <div class="footer-links">
-                    <a href="library.html" class="footer-link">📚 Alle Flaggen</a>
+                    <a href="../library.html" class="footer-link">📚 Alle Flaggen</a>
                     <span class="footer-separator">·</span>
                     <a href="#" id="aboutLinkFooter" class="footer-link">About FlagGuess</a>
                     <span class="footer-separator">·</span>
-                    <a href="impressum.html" class="footer-link">Impressum</a>
+                    <a href="../impressum.html" class="footer-link">Impressum</a>
                     <span class="footer-separator">·</span>
-                    <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+                    <a href="../datenschutz.html" class="footer-link">Datenschutz</a>
                 </div>
             </div>
         </footer>
@@ -392,10 +384,10 @@
     <div id="previousCountryPopup" class="previous-country-popup hidden"></div>
 
     <!-- Scripts -->
-    <script src="/js/countries.js"></script>
-    <script src="/js/translations.js"></script>
-    <script src="/js/theme.js"></script>
-    <script src="/js/language-router.js"></script>
-    <script src="/js/game.js"></script>
+    <script src="../js/countries.js"></script>
+    <script src="../js/translations.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/language-router.js"></script>
+    <script src="../js/game.js"></script>
 </body>
 </html>
