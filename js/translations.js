@@ -157,6 +157,12 @@ class LanguageManager {
         this.currentLang = lang;
         localStorage.setItem('flagguess-language', lang);
         this.updatePage();
+        
+        // Notify language router if it exists (for content page links)
+        if (window.languageRouter) {
+            window.languageRouter.setLanguage(lang);
+            window.languageRouter.updateContentLinks();
+        }
     }
 
     get(key) {
