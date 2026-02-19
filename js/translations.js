@@ -152,8 +152,18 @@ class LanguageManager {
         return TRANSLATIONS[browser] ? browser : 'de';
     }
 
+    // Interne Methode: Setzt Sprache ohne Page-Update (für Initialisierung)
     setLanguage(lang) {
         if (!TRANSLATIONS[lang]) return;
+        this.currentLang = lang;
+        localStorage.setItem('flagguess-language', lang);
+    }
+
+    // Öffentliche Methode: Wird vom Language Selector aufgerufen
+    setLanguageViaSelector(lang) {
+        if (!TRANSLATIONS[lang]) return;
+        if (lang === this.currentLang) return; // Keine Änderung
+        
         this.currentLang = lang;
         localStorage.setItem('flagguess-language', lang);
         
@@ -247,13 +257,16 @@ let langManager;
 
 document.addEventListener('DOMContentLoaded', () => {
     langManager = new LanguageManager();
+    
+    // WICHTIG: Initiale Übersetzung beim Laden der Seite
     langManager.updatePage();
     
-    // Event Listener
+    // Event Listener für Sprachwechsel
     const langSelect = document.getElementById('languageSelect');
     if (langSelect) {
         langSelect.addEventListener('change', (e) => {
-            langManager.setLanguage(e.target.value);
+            const newLang = e.target.value;
+            langManager.setLanguageViaSelector(newLang);
         });
     }
 });
