@@ -89,7 +89,9 @@ const TRANSLATIONS = {
         seoTitle: "Das ultimative Flaggen Quiz Spiel – Teste dein Wissen!",
         seoParagraph1: "<strong>FlagGuess</strong> ist das perfekte <strong>Flaggen Quiz</strong> für alle Geografie-Fans und Quiz-Liebhaber. In diesem kostenlosen <strong>Länderflaggen Quiz</strong> kannst du dein Wissen über mehr als 190 Flaggen aus der ganzen Welt testen. Ob du ein Anfänger bist oder bereits ein Flaggen-Experte – mit drei verschiedenen Schwierigkeitsgraden bietet das Spiel für jeden die passende Herausforderung.",
         seoParagraph2: "Das Spielprinzip ist einfach aber fesselnd: Dir wird eine zufällige <strong>Länderflagge</strong> angezeigt und du musst das richtige Land erraten. Je nach Schwierigkeitsgrad hast du zwischen 3 und 8 Versuche. Das Spiel bietet dir eine interaktive Möglichkeit, die <strong>Flaggen der Welt</strong> zu lernen und dein geografisches Wissen zu erweitern. Von europäischen Flaggen über afrikanische bis hin zu exotischen Inselstaaten – entdecke die Vielfalt aller Kontinente!",
-        seoParagraph3: "Nutze die umfangreiche <a href='library.html' class='content-link'><strong>Flag Library</strong></a>, um alle verfügbaren Flaggen zu durchstöbern und mehr über die einzelnen Länder zu erfahren. Perfekt für Schüler, Lehrer oder alle, die ihre <strong>Geografie-Kenntnisse</strong> verbessern möchten. Das <strong>tägliche Flaggen Quiz</strong> ist komplett kostenlos und funktioniert auf allen Geräten – ob Desktop, Tablet oder Smartphone."
+        seoParagraph3: "Nutze die umfangreiche <a href='library.html' class='content-link'><strong>Flag Library</strong></a>, um alle verfügbaren Flaggen zu durchstöbern und mehr über die einzelnen Länder zu erfahren. Perfekt für Schüler, Lehrer oder alle, die ihre <strong>Geografie-Kenntnisse</strong> verbessern möchten. Das <strong>tägliche Flaggen Quiz</strong> ist komplett kostenlos und funktioniert auf allen Geräten – ob Desktop, Tablet oder Smartphone.",
+        seoParagraph4: "<strong>FlagGuess</strong> bietet verschiedene Kategorien, um dein <strong>Flaggen-Wissen</strong> gezielt zu trainieren: Teste dich mit den <a href='easy-flags.html' class='content-link'>einfachsten Flaggen</a> der Welt wie USA, Deutschland oder Japan, wage dich an die <a href='hardest-flags.html' class='content-link'>schwersten Flaggen</a> wie Bhutan, Nepal oder Turkmenistan, oder lerne die Unterschiede zwischen <a href='similar-flags.html' class='content-link'>ähnlichen Flaggen</a> wie Monaco und Indonesien. Du kannst auch gezielt nach Kontinenten üben: <a href='flags-of-europe.html' class='content-link'>Europäische Flaggen</a>, <a href='flags-of-asia.html' class='content-link'>Asiatische Flaggen</a>, <a href='flags-of-africa.html' class='content-link'>Afrikanische Flaggen</a>, <a href='flags-of-americas.html' class='content-link'>Amerikanische Flaggen</a> und <a href='flags-of-oceania.html' class='content-link'>Ozeanische Flaggen</a>.",
+        seoParagraph5: "Das <strong>Flaggen Quiz</strong> ist mehr als nur ein Spiel – es ist ein effektives Lernwerkzeug für <strong>Geografie</strong>, <strong>Allgemeinbildung</strong> und <strong>Länderkunde</strong>. Ob zur Vorbereitung auf eine Reise, für den Erdkunde-Unterricht, oder einfach aus Interesse an der Welt – mit FlagGuess lernst du spielerisch die <strong>Nationalflaggen</strong> aller Länder kennen. Jede Flagge erzählt eine Geschichte über die Kultur, Geschichte und Identität eines Landes. Starte jetzt und werde zum echten <strong>Flaggen-Experten</strong>!"
     },
     en: {
         // Header
@@ -180,7 +182,9 @@ const TRANSLATIONS = {
         seoTitle: "The Ultimate Flag Quiz Game – Test Your Knowledge!",
         seoParagraph1: "<strong>FlagGuess</strong> is the perfect <strong>flag quiz</strong> for all geography fans and quiz lovers. In this free <strong>country flag quiz</strong>, you can test your knowledge of more than 190 flags from around the world. Whether you're a beginner or already a flag expert – with three different difficulty levels, the game offers the right challenge for everyone.",
         seoParagraph2: "The game principle is simple but captivating: You're shown a random <strong>country flag</strong> and you have to guess the correct country. Depending on the difficulty level, you have between 3 and 8 attempts. The game offers you an interactive way to learn the <strong>flags of the world</strong> and expand your geographical knowledge. From European flags to African flags to exotic island nations – discover the diversity of all continents!",
-        seoParagraph3: "Use the extensive <a href='library.html' class='content-link'><strong>Flag Library</strong></a> to browse all available flags and learn more about individual countries. Perfect for students, teachers, or anyone who wants to improve their <strong>geography skills</strong>. The <strong>daily flag quiz</strong> is completely free and works on all devices – whether desktop, tablet, or smartphone."
+        seoParagraph3: "Use the extensive <a href='library.html' class='content-link'><strong>Flag Library</strong></a> to browse all available flags and learn more about individual countries. Perfect for students, teachers, or anyone who wants to improve their <strong>geography skills</strong>. The <strong>daily flag quiz</strong> is completely free and works on all devices – whether desktop, tablet, or smartphone.",
+        seoParagraph4: "<strong>FlagGuess</strong> offers various categories to train your <strong>flag knowledge</strong> specifically: Test yourself with the <a href='easy-flags.html' class='content-link'>easiest flags</a> in the world like USA, Germany or Japan, dare to tackle the <a href='hardest-flags.html' class='content-link'>hardest flags</a> like Bhutan, Nepal or Turkmenistan, or learn the differences between <a href='similar-flags.html' class='content-link'>similar flags</a> like Monaco and Indonesia. You can also practice by continent: <a href='flags-of-europe.html' class='content-link'>European Flags</a>, <a href='flags-of-asia.html' class='content-link'>Asian Flags</a>, <a href='flags-of-africa.html' class='content-link'>African Flags</a>, <a href='flags-of-americas.html' class='content-link'>American Flags</a> and <a href='flags-of-oceania.html' class='content-link'>Oceania Flags</a>.",
+        seoParagraph5: "The <strong>flag quiz</strong> is more than just a game – it's an effective learning tool for <strong>geography</strong>, <strong>general knowledge</strong> and <strong>country studies</strong>. Whether preparing for a trip, for geography class, or simply out of interest in the world – with FlagGuess you learn the <strong>national flags</strong> of all countries in a playful way. Every flag tells a story about a country's culture, history and identity. Start now and become a true <strong>flag expert</strong>!"
     }
 };
 
@@ -297,6 +301,32 @@ class LanguageManager {
         if (footerLinks[1]) footerLinks[1].textContent = this.get('aboutLink');
         if (footerLinks[2]) footerLinks[2].textContent = this.get('imprint');
         if (footerLinks[3]) footerLinks[3].textContent = this.get('privacy');
+        
+        // SEO Content Section
+        const seoTitle = document.getElementById('seoTitle');
+        if (seoTitle) seoTitle.textContent = this.get('seoTitle');
+        
+        const seoParagraph1 = document.getElementById('seoParagraph1');
+        if (seoParagraph1) seoParagraph1.innerHTML = this.get('seoParagraph1');
+        
+        const seoParagraph2 = document.getElementById('seoParagraph2');
+        if (seoParagraph2) seoParagraph2.innerHTML = this.get('seoParagraph2');
+        
+        const seoParagraph3 = document.getElementById('seoParagraph3');
+        if (seoParagraph3) seoParagraph3.innerHTML = this.get('seoParagraph3');
+        
+        // Hidden content paragraphs
+        const seoParagraph4 = document.getElementById('seoParagraph4');
+        if (seoParagraph4) seoParagraph4.innerHTML = this.get('seoParagraph4');
+        
+        const seoParagraph5 = document.getElementById('seoParagraph5');
+        if (seoParagraph5) seoParagraph5.innerHTML = this.get('seoParagraph5');
+        
+        // Read More Button
+        const readMoreText = document.getElementById('readMoreText');
+        if (readMoreText) {
+            readMoreText.textContent = this.currentLang === 'de' ? 'Mehr lesen' : 'Read more';
+        }
         
         // Explore Categories Section
         const exploreCategoriesTitle = document.querySelector('.explore-categories .section-title');
