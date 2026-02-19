@@ -62,6 +62,29 @@ const TRANSLATIONS = {
         imprint: "Impressum",
         privacy: "Datenschutz",
         
+        // Explore Categories
+        exploreCategoriesTitle: "Entdecke Flaggen nach Kategorien",
+        categoryDifficultyTitle: "🎯 Nach Schwierigkeit",
+        categoryEasyTitle: "Einfache Flaggen",
+        categoryEasyDesc: "Top 20 für Einsteiger",
+        categoryHardTitle: "Schwerste Flaggen",
+        categoryHardDesc: "Ultimative Challenge",
+        categorySimilarTitle: "Ähnliche Flaggen",
+        categorySimilarDesc: "Verwechslungsgefahr",
+        categoryContinentTitle: "🌍 Nach Kontinent",
+        categoryEuropeTitle: "Europäische Flaggen",
+        categoryEuropeDesc: "44 Länder",
+        categoryAsiaTitle: "Asiatische Flaggen",
+        categoryAsiaDesc: "48 Länder",
+        categoryAfricaTitle: "Afrikanische Flaggen",
+        categoryAfricaDesc: "54 Länder",
+        categoryAmericasTitle: "Amerikanische Flaggen",
+        categoryAmericasDesc: "35 Länder",
+        categoryOceaniaTitle: "Ozeanische Flaggen",
+        categoryOceaniaDesc: "14 Länder",
+        categoryAllTitle: "Alle Flaggen",
+        categoryAllDesc: "195+ Länder",
+        
         // SEO Content
         seoTitle: "Das ultimative Flaggen Quiz Spiel – Teste dein Wissen!",
         seoParagraph1: "<strong>FlagGuess</strong> ist das perfekte <strong>Flaggen Quiz</strong> für alle Geografie-Fans und Quiz-Liebhaber. In diesem kostenlosen <strong>Länderflaggen Quiz</strong> kannst du dein Wissen über mehr als 190 Flaggen aus der ganzen Welt testen. Ob du ein Anfänger bist oder bereits ein Flaggen-Experte – mit drei verschiedenen Schwierigkeitsgraden bietet das Spiel für jeden die passende Herausforderung.",
@@ -130,6 +153,29 @@ const TRANSLATIONS = {
         imprint: "Imprint",
         privacy: "Privacy",
         
+        // Explore Categories
+        exploreCategoriesTitle: "Discover Flags by Category",
+        categoryDifficultyTitle: "🎯 By Difficulty",
+        categoryEasyTitle: "Easy Flags",
+        categoryEasyDesc: "Top 20 for Beginners",
+        categoryHardTitle: "Hardest Flags",
+        categoryHardDesc: "Ultimate Challenge",
+        categorySimilarTitle: "Similar Flags",
+        categorySimilarDesc: "Look-Alike Flags",
+        categoryContinentTitle: "🌍 By Continent",
+        categoryEuropeTitle: "European Flags",
+        categoryEuropeDesc: "44 Countries",
+        categoryAsiaTitle: "Asian Flags",
+        categoryAsiaDesc: "48 Countries",
+        categoryAfricaTitle: "African Flags",
+        categoryAfricaDesc: "54 Countries",
+        categoryAmericasTitle: "American Flags",
+        categoryAmericasDesc: "35 Countries",
+        categoryOceaniaTitle: "Oceania Flags",
+        categoryOceaniaDesc: "14 Countries",
+        categoryAllTitle: "All Flags",
+        categoryAllDesc: "195+ Countries",
+        
         // SEO Content
         seoTitle: "The Ultimate Flag Quiz Game – Test Your Knowledge!",
         seoParagraph1: "<strong>FlagGuess</strong> is the perfect <strong>flag quiz</strong> for all geography fans and quiz lovers. In this free <strong>country flag quiz</strong>, you can test your knowledge of more than 190 flags from around the world. Whether you're a beginner or already a flag expert – with three different difficulty levels, the game offers the right challenge for everyone.",
@@ -145,9 +191,16 @@ class LanguageManager {
     }
 
     getInitialLanguage() {
+        // 1. Prüfe URL-Pfad zuerst (höchste Priorität!)
+        const path = window.location.pathname;
+        if (path.includes('/en/')) return 'en';
+        if (path.includes('/de/')) return 'de';
+        
+        // 2. Prüfe localStorage
         const saved = localStorage.getItem('flagguess-language');
         if (saved && TRANSLATIONS[saved]) return saved;
         
+        // 3. Prüfe Browser-Sprache
         const browser = navigator.language.split('-')[0];
         return TRANSLATIONS[browser] ? browser : 'de';
     }
@@ -244,6 +297,55 @@ class LanguageManager {
         if (footerLinks[1]) footerLinks[1].textContent = this.get('aboutLink');
         if (footerLinks[2]) footerLinks[2].textContent = this.get('imprint');
         if (footerLinks[3]) footerLinks[3].textContent = this.get('privacy');
+        
+        // Explore Categories Section
+        const exploreCategoriesTitle = document.querySelector('.explore-categories .section-title');
+        if (exploreCategoriesTitle) exploreCategoriesTitle.textContent = this.get('exploreCategoriesTitle');
+        
+        const categoryGroupTitles = document.querySelectorAll('.category-group-title');
+        if (categoryGroupTitles[0]) categoryGroupTitles[0].textContent = this.get('categoryDifficultyTitle');
+        if (categoryGroupTitles[1]) categoryGroupTitles[1].textContent = this.get('categoryContinentTitle');
+        
+        // Category Cards - Difficulty
+        const categoryCards = document.querySelectorAll('.category-card');
+        if (categoryCards[0]) { // Easy
+            categoryCards[0].querySelector('h4').textContent = this.get('categoryEasyTitle');
+            categoryCards[0].querySelector('p').textContent = this.get('categoryEasyDesc');
+        }
+        if (categoryCards[1]) { // Hard
+            categoryCards[1].querySelector('h4').textContent = this.get('categoryHardTitle');
+            categoryCards[1].querySelector('p').textContent = this.get('categoryHardDesc');
+        }
+        if (categoryCards[2]) { // Similar
+            categoryCards[2].querySelector('h4').textContent = this.get('categorySimilarTitle');
+            categoryCards[2].querySelector('p').textContent = this.get('categorySimilarDesc');
+        }
+        
+        // Category Cards - Continents
+        if (categoryCards[3]) { // Europe
+            categoryCards[3].querySelector('h4').textContent = this.get('categoryEuropeTitle');
+            categoryCards[3].querySelector('p').textContent = this.get('categoryEuropeDesc');
+        }
+        if (categoryCards[4]) { // Asia
+            categoryCards[4].querySelector('h4').textContent = this.get('categoryAsiaTitle');
+            categoryCards[4].querySelector('p').textContent = this.get('categoryAsiaDesc');
+        }
+        if (categoryCards[5]) { // Africa
+            categoryCards[5].querySelector('h4').textContent = this.get('categoryAfricaTitle');
+            categoryCards[5].querySelector('p').textContent = this.get('categoryAfricaDesc');
+        }
+        if (categoryCards[6]) { // Americas
+            categoryCards[6].querySelector('h4').textContent = this.get('categoryAmericasTitle');
+            categoryCards[6].querySelector('p').textContent = this.get('categoryAmericasDesc');
+        }
+        if (categoryCards[7]) { // Oceania
+            categoryCards[7].querySelector('h4').textContent = this.get('categoryOceaniaTitle');
+            categoryCards[7].querySelector('p').textContent = this.get('categoryOceaniaDesc');
+        }
+        if (categoryCards[8]) { // All Flags
+            categoryCards[8].querySelector('h4').textContent = this.get('categoryAllTitle');
+            categoryCards[8].querySelector('p').textContent = this.get('categoryAllDesc');
+        }
     }
 
     updateElement(id, key = null) {
