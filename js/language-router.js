@@ -46,29 +46,27 @@ class LanguageRouter {
     // Initialize
     init() {
         document.addEventListener('DOMContentLoaded', () => {
-            this.setupLanguageSelect();
+            this.syncLanguageSelect();
         });
     }
 
-    // Setup language select dropdown
-    setupLanguageSelect() {
+    // Sync language select to current language (no event listener - translations.js handles that)
+    syncLanguageSelect() {
         const langSelect = document.getElementById('languageSelect');
         if (!langSelect) return;
 
-        // Set current value
+        // Set current value based on URL
         langSelect.value = this.currentLang;
-
-        // Add event listener
-        langSelect.addEventListener('change', (e) => {
-            this.handleLanguageChange(e.target.value);
-        });
         
-        console.log('[LanguageRouter] Language select initialized');
+        console.log('[LanguageRouter] Language select synced to:', this.currentLang);
     }
 
-    // Handle language change
+    // Handle language change (called by translations.js)
     handleLanguageChange(newLang) {
-        if (newLang === this.currentLang) return;
+        if (newLang === this.currentLang) {
+            console.log('[LanguageRouter] Already on language:', newLang);
+            return;
+        }
 
         // Save new language
         this.setLanguage(newLang);
@@ -91,7 +89,9 @@ class LanguageRouter {
         }
         
         console.log('[LanguageRouter] Navigating from', path, 'to', newPath);
-        window.location.href = newPath;
+        
+        // Use replace to avoid back button issues
+        window.location.replace(newPath);
     }
 
     // Check if currently on a localized page

@@ -156,9 +156,18 @@ class LanguageManager {
         if (!TRANSLATIONS[lang]) return;
         this.currentLang = lang;
         localStorage.setItem('flagguess-language', lang);
+        
+        // Check if we need to navigate to different language folder
+        if (window.languageRouter && window.languageRouter.isOnLocalizedPage()) {
+            // We're on /de/ or /en/ → navigate to other language version
+            window.languageRouter.handleLanguageChange(lang);
+            return; // Don't update page, will reload anyway
+        }
+        
+        // We're on root → just update translations
         this.updatePage();
         
-        // Notify language router if it exists (for content page links)
+        // Update content links if language router exists
         if (window.languageRouter) {
             window.languageRouter.setLanguage(lang);
             window.languageRouter.updateContentLinks();
