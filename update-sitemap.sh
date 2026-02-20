@@ -254,8 +254,6 @@ if [ -d "de/countries" ]; then
     <loc>${BASE_URL}/de/countries/${slug}.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="${BASE_URL}/de/countries/${slug}.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/countries/${slug}.html"/>
   </url>
 
 EOF
