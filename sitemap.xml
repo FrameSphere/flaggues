@@ -32,92 +32,134 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- About -->
+  <!-- German Content Pages -->
   <url>
-    <loc>https://flaggues.pages.dev/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Continent Pages -->
-  <url>
-    <loc>https://flaggues.pages.dev/flags-of-europe.html</loc>
+    <loc>https://flaggues.pages.dev/de/easy-flags.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/easy-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/easy-flags.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/flags-of-asia.html</loc>
+    <loc>https://flaggues.pages.dev/de/hardest-flags.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/hardest-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/hardest-flags.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/flags-of-africa.html</loc>
+    <loc>https://flaggues.pages.dev/de/similar-flags.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/similar-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/similar-flags.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/flags-of-americas.html</loc>
+    <loc>https://flaggues.pages.dev/de/flags-of-europe.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-europe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-europe.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/flags-of-oceania.html</loc>
+    <loc>https://flaggues.pages.dev/de/flags-of-asia.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-asia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-asia.html"/>
   </url>
 
-  <!-- Special Pages -->
   <url>
-    <loc>https://flaggues.pages.dev/hardest-flags.html</loc>
+    <loc>https://flaggues.pages.dev/de/flags-of-africa.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-africa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-africa.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/similar-flags.html</loc>
+    <loc>https://flaggues.pages.dev/de/flags-of-americas.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-americas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-americas.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/easy-flags.html</loc>
+    <loc>https://flaggues.pages.dev/de/flags-of-oceania.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-oceania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-oceania.html"/>
   </url>
 
-  <!-- Country Pages (Programmatic SEO) -->
+  <!-- English Content Pages -->
   <url>
-    <loc>https://flaggues.pages.dev/countries/germany-flag.html</loc>
+    <loc>https://flaggues.pages.dev/en/easy-flags.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaggues.pages.dev/countries/usa-flag.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaggues.pages.dev/countries/france-flag.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/easy-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/easy-flags.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/countries/japan-flag.html</loc>
+    <loc>https://flaggues.pages.dev/en/hardest-flags.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/hardest-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/hardest-flags.html"/>
   </url>
 
   <url>
-    <loc>https://flaggues.pages.dev/countries/canada-flag.html</loc>
+    <loc>https://flaggues.pages.dev/en/similar-flags.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/similar-flags.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/similar-flags.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/en/flags-of-europe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-europe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-europe.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/en/flags-of-asia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-asia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-asia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/en/flags-of-africa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-africa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-africa.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/en/flags-of-americas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-americas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-americas.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/en/flags-of-oceania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/flags-of-oceania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/flags-of-oceania.html"/>
   </url>
 
   <!-- Legal Pages -->
@@ -132,5 +174,1602 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- ================================ -->
+  <!-- COUNTRY PAGES (AUTO-GENERATED)   -->
+  <!-- ================================ -->
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/afghanistan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/afghanistan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/afghanistan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/albania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/albania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/albania.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/algeria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/algeria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/algeria.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/andorra.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/andorra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/andorra.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/angola.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/angola.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/angola.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/antigua-barbuda.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/antigua-barbuda.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/antigua-barbuda.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/argentina.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/argentina.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/argentina.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/armenia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/armenia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/armenia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/australia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/australia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/australia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/austria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/austria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/austria.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/azerbaijan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/azerbaijan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/azerbaijan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bahamas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bahamas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bahamas.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bahrain.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bahrain.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bahrain.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bangladesh.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bangladesh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bangladesh.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/barbados.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/barbados.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/barbados.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/belarus.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/belarus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/belarus.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/belgium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/belgium.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/belgium.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/belize.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/belize.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/belize.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/benin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/benin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/benin.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bhutan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bhutan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bhutan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bolivia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bolivia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bolivia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bosnia-herzegovina.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bosnia-herzegovina.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bosnia-herzegovina.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/botswana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/botswana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/botswana.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/brazil.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/brazil.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/brazil.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/brunei.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/brunei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/brunei.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/bulgaria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/bulgaria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/bulgaria.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/burkina-faso.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/burkina-faso.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/burkina-faso.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/burundi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/burundi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/burundi.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/cambodia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/cambodia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/cambodia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/cameroon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/cameroon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/cameroon.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/canada.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/canada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/canada.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/cape-verde.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/cape-verde.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/cape-verde.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/central-african-republic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/central-african-republic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/central-african-republic.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/chad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/chad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/chad.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/chile.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/chile.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/chile.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/china.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/china.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/china.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/colombia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/colombia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/colombia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/comoros.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/comoros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/comoros.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/congo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/congo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/congo.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/costa-rica.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/costa-rica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/costa-rica.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/croatia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/croatia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/croatia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/cuba.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/cuba.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/cuba.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/cyprus.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/cyprus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/cyprus.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/czech-republic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/czech-republic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/czech-republic.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/denmark.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/denmark.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/denmark.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/djibouti.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/djibouti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/djibouti.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/dominica.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/dominica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/dominica.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/dominican-republic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/dominican-republic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/dominican-republic.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/dr-congo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/dr-congo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/dr-congo.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/east-timor.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/east-timor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/east-timor.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ecuador.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ecuador.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ecuador.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/egypt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/egypt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/egypt.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/el-salvador.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/el-salvador.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/el-salvador.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/equatorial-guinea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/equatorial-guinea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/equatorial-guinea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/eritrea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/eritrea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/eritrea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/estonia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/estonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/estonia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/eswatini.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/eswatini.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/eswatini.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ethiopia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ethiopia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ethiopia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/fiji.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/fiji.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/fiji.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/finland.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/finland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/finland.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/france.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/france.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/france.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/gabon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/gabon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/gabon.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/gambia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/gambia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/gambia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/georgia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/georgia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/georgia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/germany.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/germany.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/germany.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ghana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ghana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ghana.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/greece.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/greece.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/greece.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/grenada.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/grenada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/grenada.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/guatemala.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/guatemala.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/guatemala.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/guinea-bissau.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/guinea-bissau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/guinea-bissau.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/guinea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/guinea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/guinea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/guyana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/guyana.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/guyana.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/haiti.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/haiti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/haiti.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/honduras.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/honduras.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/honduras.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/hong-kong.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/hong-kong.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/hong-kong.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/hungary.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/hungary.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/hungary.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/iceland.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/iceland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/iceland.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/india.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/india.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/india.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/indonesia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/indonesia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/indonesia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/iran.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/iran.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/iran.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/iraq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/iraq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/iraq.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ireland.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ireland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ireland.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/israel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/israel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/israel.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/italy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/italy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/italy.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ivory-coast.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ivory-coast.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ivory-coast.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/jamaica.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/jamaica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/jamaica.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/japan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/japan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/japan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/jordan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/jordan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/jordan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kazakhstan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kazakhstan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kazakhstan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kenya.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kenya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kenya.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kiribati.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kiribati.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kiribati.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kosovo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kosovo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kosovo.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kuwait.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kuwait.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kuwait.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/kyrgyzstan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/kyrgyzstan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/kyrgyzstan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/laos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/laos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/laos.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/latvia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/latvia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/latvia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/lebanon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/lebanon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/lebanon.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/lesotho.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/lesotho.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/lesotho.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/liberia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/liberia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/liberia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/libya.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/libya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/libya.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/liechtenstein.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/liechtenstein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/liechtenstein.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/lithuania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/lithuania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/lithuania.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/luxembourg.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/luxembourg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/luxembourg.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/macau.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/macau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/macau.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/madagascar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/madagascar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/madagascar.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/malawi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/malawi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/malawi.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/malaysia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/malaysia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/malaysia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/maldives.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/maldives.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/maldives.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mali.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mali.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mali.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/malta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/malta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/malta.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/marshall-islands.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/marshall-islands.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/marshall-islands.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mauritania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mauritania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mauritania.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mauritius.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mauritius.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mauritius.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mexico.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mexico.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mexico.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/micronesia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/micronesia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/micronesia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/moldova.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/moldova.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/moldova.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/monaco.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/monaco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/monaco.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mongolia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mongolia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mongolia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/montenegro.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/montenegro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/montenegro.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/morocco.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/morocco.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/mozambique.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/mozambique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/mozambique.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/myanmar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/myanmar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/myanmar.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/namibia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/namibia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/namibia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/nauru.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/nauru.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/nauru.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/nepal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/nepal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/nepal.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/netherlands.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/netherlands.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/netherlands.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/new-zealand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/new-zealand.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/new-zealand.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/nicaragua.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/nicaragua.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/nicaragua.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/niger.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/niger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/niger.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/nigeria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/nigeria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/nigeria.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/north-korea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/north-korea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/north-korea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/north-macedonia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/north-macedonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/north-macedonia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/norway.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/norway.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/norway.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/oman.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/oman.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/oman.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/pakistan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/pakistan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/pakistan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/palau.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/palau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/palau.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/palestine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/palestine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/palestine.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/panama.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/panama.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/panama.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/papua-new-guinea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/papua-new-guinea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/papua-new-guinea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/paraguay.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/paraguay.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/paraguay.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/peru.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/peru.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/peru.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/philippines.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/philippines.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/philippines.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/poland.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/poland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/poland.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/portugal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/portugal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/portugal.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/qatar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/qatar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/qatar.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/romania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/romania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/romania.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/russia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/russia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/russia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/rwanda.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/rwanda.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/rwanda.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/saint-kitts-nevis.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/saint-kitts-nevis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/saint-kitts-nevis.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/saint-lucia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/saint-lucia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/saint-lucia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/saint-vincent-grenadines.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/saint-vincent-grenadines.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/saint-vincent-grenadines.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/samoa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/samoa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/samoa.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/san-marino.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/san-marino.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/san-marino.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/sao-tome-principe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/sao-tome-principe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/sao-tome-principe.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/saudi-arabia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/saudi-arabia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/saudi-arabia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/senegal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/senegal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/senegal.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/serbia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/serbia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/serbia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/seychelles.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/seychelles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/seychelles.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/sierra-leone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/sierra-leone.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/sierra-leone.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/singapore.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/singapore.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/singapore.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/slovakia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/slovakia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/slovakia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/slovenia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/slovenia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/slovenia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/solomon-islands.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/solomon-islands.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/solomon-islands.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/somalia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/somalia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/somalia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/south-africa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/south-africa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/south-africa.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/south-korea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/south-korea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/south-korea.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/south-sudan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/south-sudan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/south-sudan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/spain.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/spain.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/spain.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/sri-lanka.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/sri-lanka.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/sri-lanka.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/sudan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/sudan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/sudan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/suriname.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/suriname.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/suriname.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/sweden.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/sweden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/sweden.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/switzerland.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/switzerland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/switzerland.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/syria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/syria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/syria.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/taiwan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/taiwan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/taiwan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/tajikistan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/tajikistan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/tajikistan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/tanzania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/tanzania.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/tanzania.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/thailand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/thailand.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/thailand.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/togo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/togo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/togo.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/tonga.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/tonga.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/tonga.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/trinidad-tobago.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/trinidad-tobago.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/trinidad-tobago.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/tunisia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/tunisia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/tunisia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/turkey.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/turkey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/turkey.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/turkmenistan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/turkmenistan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/turkmenistan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/tuvalu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/tuvalu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/tuvalu.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/uganda.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/uganda.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/uganda.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/ukraine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/ukraine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/ukraine.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/united-arab-emirates.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/united-arab-emirates.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/united-arab-emirates.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/united-kingdom.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/united-kingdom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/united-kingdom.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/uruguay.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/uruguay.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/uruguay.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/usa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/usa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/usa.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/uzbekistan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/uzbekistan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/uzbekistan.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/vanuatu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/vanuatu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/vanuatu.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/vatican.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/vatican.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/vatican.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/venezuela.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/venezuela.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/venezuela.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/vietnam.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/vietnam.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/vietnam.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/yemen.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/yemen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/yemen.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/zambia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/zambia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/zambia.html"/>
+  </url>
+
+  <url>
+    <loc>https://flaggues.pages.dev/de/countries/zimbabwe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://flaggues.pages.dev/de/countries/zimbabwe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaggues.pages.dev/en/countries/zimbabwe.html"/>
+  </url>
+
 
 </urlset>
