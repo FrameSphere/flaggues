@@ -1,3 +1,64 @@
+// Country code to slug mapping
+function getCountrySlug(code) {
+    const codeToSlug = {
+        // Europe
+        'de': 'germany', 'fr': 'france', 'it': 'italy', 'es': 'spain', 'pt': 'portugal',
+        'nl': 'netherlands', 'be': 'belgium', 'at': 'austria', 'ch': 'switzerland', 'pl': 'poland',
+        'cz': 'czech-republic', 'hu': 'hungary', 'ro': 'romania', 'bg': 'bulgaria', 'gr': 'greece',
+        'se': 'sweden', 'no': 'norway', 'dk': 'denmark', 'fi': 'finland', 'is': 'iceland',
+        'ie': 'ireland', 'gb': 'united-kingdom', 'hr': 'croatia', 'si': 'slovenia', 'sk': 'slovakia',
+        'rs': 'serbia', 'ua': 'ukraine', 'ru': 'russia', 'ee': 'estonia', 'lv': 'latvia',
+        'lt': 'lithuania', 'lu': 'luxembourg', 'mc': 'monaco', 'mt': 'malta', 'cy': 'cyprus',
+        'al': 'albania', 'mk': 'north-macedonia', 'ba': 'bosnia-herzegovina', 'me': 'montenegro',
+        'xk': 'kosovo', 'ad': 'andorra', 'li': 'liechtenstein', 'sm': 'san-marino',
+        'va': 'vatican', 'md': 'moldova', 'by': 'belarus', 'ge': 'georgia', 'am': 'armenia', 'az': 'azerbaijan',
+        
+        // Asia
+        'cn': 'china', 'jp': 'japan', 'kr': 'south-korea', 'in': 'india', 'th': 'thailand',
+        'vn': 'vietnam', 'id': 'indonesia', 'my': 'malaysia', 'ph': 'philippines', 'sg': 'singapore',
+        'pk': 'pakistan', 'bd': 'bangladesh', 'lk': 'sri-lanka', 'mm': 'myanmar', 'kh': 'cambodia',
+        'la': 'laos', 'bn': 'brunei', 'tl': 'east-timor', 'mn': 'mongolia', 'np': 'nepal',
+        'bt': 'bhutan', 'mv': 'maldives', 'af': 'afghanistan', 'kz': 'kazakhstan', 'uz': 'uzbekistan',
+        'tm': 'turkmenistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'kp': 'north-korea',
+        'tw': 'taiwan', 'hk': 'hong-kong', 'mo': 'macau', 'ir': 'iran', 'iq': 'iraq',
+        'kw': 'kuwait', 'bh': 'bahrain', 'om': 'oman', 'ye': 'yemen', 'sy': 'syria',
+        'lb': 'lebanon', 'jo': 'jordan', 'ps': 'palestine', 'tr': 'turkey', 'il': 'israel',
+        'sa': 'saudi-arabia', 'ae': 'united-arab-emirates', 'qa': 'qatar',
+        
+        // Africa
+        'za': 'south-africa', 'eg': 'egypt', 'ma': 'morocco', 'ng': 'nigeria', 'ke': 'kenya',
+        'dz': 'algeria', 'tn': 'tunisia', 'ly': 'libya', 'sd': 'sudan', 'ss': 'south-sudan',
+        'et': 'ethiopia', 'so': 'somalia', 'ug': 'uganda', 'tz': 'tanzania', 'gh': 'ghana',
+        'ci': 'ivory-coast', 'sn': 'senegal', 'cm': 'cameroon', 'ao': 'angola', 'mz': 'mozambique',
+        'zw': 'zimbabwe', 'zm': 'zambia', 'na': 'namibia', 'bw': 'botswana', 'mg': 'madagascar',
+        'mu': 'mauritius', 'rw': 'rwanda', 'bj': 'benin', 'tg': 'togo', 'ml': 'mali',
+        'bf': 'burkina-faso', 'ne': 'niger', 'td': 'chad', 'ga': 'gabon', 'cg': 'congo',
+        'cd': 'dr-congo', 'bi': 'burundi', 'cf': 'central-african-republic', 'km': 'comoros',
+        'dj': 'djibouti', 'er': 'eritrea', 'sz': 'eswatini', 'gm': 'gambia', 'gn': 'guinea',
+        'gw': 'guinea-bissau', 'gq': 'equatorial-guinea', 'ls': 'lesotho', 'lr': 'liberia',
+        'mw': 'malawi', 'mr': 'mauritania', 'sc': 'seychelles', 'sl': 'sierra-leone',
+        'st': 'sao-tome-principe', 'cv': 'cape-verde',
+        
+        // Americas
+        'us': 'usa', 'ca': 'canada', 'mx': 'mexico', 'br': 'brazil', 'ar': 'argentina',
+        'cl': 'chile', 'co': 'colombia', 'pe': 'peru', 've': 'venezuela', 'uy': 'uruguay',
+        'py': 'paraguay', 'ec': 'ecuador', 'bo': 'bolivia', 'pa': 'panama', 'cr': 'costa-rica',
+        'gt': 'guatemala', 'hn': 'honduras', 'ni': 'nicaragua', 'sv': 'el-salvador',
+        'cu': 'cuba', 'jm': 'jamaica', 'ht': 'haiti', 'do': 'dominican-republic',
+        'tt': 'trinidad-tobago', 'bs': 'bahamas', 'bb': 'barbados', 'bz': 'belize',
+        'gy': 'guyana', 'sr': 'suriname', 'ag': 'antigua-barbuda', 'dm': 'dominica',
+        'gd': 'grenada', 'kn': 'saint-kitts-nevis', 'lc': 'saint-lucia', 'vc': 'saint-vincent-grenadines',
+        
+        // Oceania
+        'au': 'australia', 'nz': 'new-zealand', 'pg': 'papua-new-guinea', 'fj': 'fiji',
+        'sb': 'solomon-islands', 'ws': 'samoa', 'vu': 'vanuatu', 'to': 'tonga',
+        'pw': 'palau', 'fm': 'micronesia', 'ki': 'kiribati', 'mh': 'marshall-islands',
+        'nr': 'nauru', 'tv': 'tuvalu'
+    };
+    
+    return codeToSlug[code.toLowerCase()] || code.toLowerCase();
+}
+
 // Library Main Script
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Language Manager
@@ -101,6 +162,16 @@ document.addEventListener('DOMContentLoaded', () => {
         card.dataset.continent = data.continent || 'unknown';
         card.dataset.name = countryName.toLowerCase();
         card.dataset.code = country.code;
+        
+        // Make card clickable and link to country page
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', () => {
+            // Convert country code to slug
+            const slug = getCountrySlug(country.code);
+            const lang = libraryLangManager.currentLang || 'de';
+            const countryPageUrl = `/${lang}/countries/${slug}.html`;
+            window.location.href = countryPageUrl;
+        });
         
         return card;
     }
