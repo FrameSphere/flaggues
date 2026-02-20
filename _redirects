@@ -32,6 +32,3 @@
 
 # ---- Google Verification
 /google7ef57c38ed213579.html   /google7ef57c38ed213579.html   200
-
-# ---- SPA Fallback (ALWAYS LAST RULE!)
-/*            /index.html        200
