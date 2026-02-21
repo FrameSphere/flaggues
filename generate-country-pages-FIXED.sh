@@ -233,6 +233,9 @@ generate_country_page() {
     <title>%%DE_NAME%% Flagge Quiz – %%DE_NAME%%flagge erraten | FlagGuess</title>
     <meta name="description" content="Lerne die %%DE_NAME%% Flagge kennen. %%DE_DESC%% Teste dein Wissen im kostenlosen Flaggen Quiz.">
     
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005"
+     crossorigin="anonymous"></script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="%%DE_NAME%% Flagge | FlagGuess">
     <meta property="og:description" content="%%DE_DESC%%">
