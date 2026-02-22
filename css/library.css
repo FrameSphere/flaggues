@@ -42,6 +42,42 @@
     letter-spacing: 0.05em;
 }
 
+/* Info Section*/
+.lib-info-section {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: rgba(173, 216, 230, 0.2); /* hellblau, leicht durchsichtig */
+    border: 2px solid rgba(0, 102, 204, 0.6);    /* dunkleres blau, weniger durchsichtig */
+    border-radius: 12px;                          /* abgerundete Ecken */
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+}
+
+.info-symbol {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 102, 204, 0.8); /* kräftigeres blau für Symbol */
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.info-text h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #003366; /* dunkles blau für Text */
+}
+
 /* Filter Section */
 .filter-section {
     margin-bottom: 40px;
