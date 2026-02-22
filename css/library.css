@@ -48,13 +48,19 @@
     margin: 20px auto;
     padding: 15px 20px;
     background-color: rgba(173, 216, 230, 0.2); /* hellblau, leicht durchsichtig */
-    border: 2px solid rgba(0, 102, 204, 0.6);    /* dunkleres blau, weniger durchsichtig */
+    border: 2px solid rgba(0, 102, 204, 0.6);    /* dunkleres blau */
     border-radius: 12px;                          /* abgerundete Ecken */
     display: flex;
-    align-items: flex-start;
+    align-items: center;                          /* symbol + text inline */
     gap: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     font-family: Arial, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lib-info-section:hover {
+    transform: scale(1.03); /* leicht vergrößern */
+    box-shadow: 0 8px 20px rgba(173, 216, 230, 0.6); /* hellblauer Shadow */
 }
 
 .info-symbol {
