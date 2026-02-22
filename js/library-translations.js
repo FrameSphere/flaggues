@@ -10,6 +10,9 @@ const LIBRARY_TRANSLATIONS = {
         totalCountriesLabel: "Länder insgesamt",
         continentsLabel: "Kontinente",
         displayedLabel: "Angezeigt",
+
+        // Info
+        infoText: "Klicke auf eine Länder Karte um mehr Informationen über dieses Land zu erhalten!",
         
         // Filter
         filterTitle: "Filtern nach Kontinent",
@@ -44,6 +47,9 @@ const LIBRARY_TRANSLATIONS = {
         totalCountriesLabel: "Total Countries",
         continentsLabel: "Continents",
         displayedLabel: "Displayed",
+
+        // Info
+        infoText: "Click on any country card to get more informations about this country!",
         
         // Filter
         filterTitle: "Filter by Continent",
@@ -104,6 +110,7 @@ class LibraryLanguageManager {
         this.updateElement('displayedLabel');
         this.updateElement('filterTitle');
         this.updateElement('backToGameFooter');
+        this.updateElement('infoText');
         
         // Filter Buttons
         document.getElementById('filterAll').innerHTML = `🌍 ${this.get('filterAll')}`;
