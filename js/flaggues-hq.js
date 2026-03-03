@@ -224,7 +224,6 @@
   // ── Kontakt-Link in alle Footer einbauen ─────────────────────────
   function injectContactLinks() {
     document.querySelectorAll('.footer-links').forEach(function (footerLinks) {
-      // Nicht doppelt einfügen
       if (footerLinks.querySelector('.fg-contact-link')) return;
 
       var sep  = document.createElement('span');
@@ -242,11 +241,17 @@
     });
   }
 
-  // Nach DOM-Ready ausführen
+  // Nach DOM-Ready ausführen + gegenüber translations.js verzögert
+  // (translations.js läuft am Body-Ende, unser DOMContentLoaded läuft früher)
+  // setTimeout(0) stellt sicher dass alle anderen DOMContentLoaded-Handler
+  // (inkl. translations updatePage) zuerst fertig sind.
+  function scheduleInject() {
+    setTimeout(injectContactLinks, 0);
+  }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectContactLinks);
+    document.addEventListener('DOMContentLoaded', scheduleInject);
   } else {
-    injectContactLinks();
+    scheduleInject();
   }
 
   // Global verfügbar machen (falls manuell aufgerufen werden soll)
