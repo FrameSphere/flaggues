@@ -61,6 +61,7 @@ const TRANSLATIONS = {
         libraryLink: "Flag Library",
         imprint: "Impressum",
         privacy: "Datenschutz",
+        contact: "Kontakt",
         
         // Explore Categories
         exploreCategoriesTitle: "Entdecke Flaggen nach Kategorien",
@@ -154,6 +155,7 @@ const TRANSLATIONS = {
         libraryLink: "Flag Library",
         imprint: "Imprint",
         privacy: "Privacy",
+        contact: "Contact",
         
         // Explore Categories
         exploreCategoriesTitle: "Discover Flags by Category",
@@ -301,6 +303,7 @@ class LanguageManager {
         if (footerLinks[1]) footerLinks[1].textContent = this.get('aboutLink');
         if (footerLinks[2]) footerLinks[2].textContent = this.get('imprint');
         if (footerLinks[3]) footerLinks[3].textContent = this.get('privacy');
+        if (footerLinks[4]) footerLinks[4].textContent = this.get('contact');
         
         // SEO Content Section
         const seoTitle = document.getElementById('seoTitle');
